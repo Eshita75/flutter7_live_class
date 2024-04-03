@@ -65,6 +65,25 @@ class MyApp extends StatelessWidget{
         ),
         textButtonTheme: TextButtonThemeData(
           style: ButtonStyles.textButton
+        ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: OutlineInputBorder(),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(50)
+          ),
+          errorBorder:OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red)
+          )
+        ),
+
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.purple,
+          titleTextStyle: TextStyle(
+            color: Colors.black,
+            fontSize: 20,
+            fontWeight: FontWeight.bold
+          )
         )
       ),
     );
