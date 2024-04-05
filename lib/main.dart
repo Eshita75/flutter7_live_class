@@ -79,6 +79,7 @@ class MyApp extends StatelessWidget{
 
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.purple,
+          centerTitle: true,
           titleTextStyle: TextStyle(
             color: Colors.black,
             fontSize: 20,
@@ -86,6 +87,21 @@ class MyApp extends StatelessWidget{
           )
         )
       ),
+
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.indigo,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)
+            )
+          )
+            //style: ButtonStyles.elevatedButton
+        ),
+      ),
+      themeMode: ThemeMode.light,
     );
   }
 }
